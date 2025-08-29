@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yan Bhone's Kitchen</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        header { background-color: #88a6d2; color: white; padding: 10px 0; text-align: center; }
+        .logo { font-size: 2.5em; font-weight: bold; }
+        nav { background-color: #374e70; padding: 10px 0; text-align: center; }
+        nav a { color: white; text-decoration: none; padding: 0 15px; }
+        main { display: flex; flex-wrap: wrap; margin-top: 20px; }
+        .main-content { flex: 3; padding: 20px; background-color: white; }
+        aside { flex: 1; padding: 20px; background-color: #eee; margin-left: 20px; }
+        h1, h2, h3 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li a { text-decoration: none; color: #0066cc; }
+        footer { text-align: center; padding: 20px; background-color: #374e70; color: white; margin-top: 20px; }
+    
+        /* အရင် CSS code များရဲ့ အောက်မှာ ဒီ code တွေကို ထည့်ပါ */
+
+.card {
+    background-color: #fff;
+    border-radius: 8px; /* ဘေးထောင့်တွေကို အဝိုင်းလေးဖြစ်အောင်လုပ် */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* အရိပ်လေးထည့်သွင်း */
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* မောက်စ်တင်ရင် ရွှေ့သွားတဲ့ effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* မောက်စ်တင်ရင် အပေါ်နည်းနည်းလေးတက်သွားအောင် */
+}
+
+.card-image {
+    width: 100%;
+    height: 150px; /* ပုံရဲ့ အမြင့်ကို သတ်မှတ် */
+    object-fit: cover; /* ပုံရဲ့ အချိုးမပျက်အောင် ဖြတ်ညှပ်ကပ် */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+aside h3 {
+    margin-top: 0;
+    color: #374e70; /* ခေါင်းစဉ် အရောင်ပြောင်း */
+    border-bottom: 2px solid #374e70;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+aside li a:hover {
+    color: #374e70; /* မောက်စ်တင်ရင် အရောင်ပြောင်း */
+    text-decoration: underline;
+}
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html">Bhone's Kitchen</a></div>
+            <h1>Welcome to My Kitchen!</h1>
+            <p>People who know me know that I love to cook. I've created this site to share some of my favorite recipes and online food resources. *Bon Appétit!*</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+            <div class="main-content">
+                <!-- Header -->
+                <header>
+                  <h1>🍳 Recipes</h1>
+                    <p>Welcome to my recipe collection! Here you'll find some of my favorite dishes — from quick snacks to hearty meals.</p>
+                </header>
+
+                <!-- Recipes by Category -->
+                <section id="breakfast">
+                  <h2>🍳 Breakfast</h2>
+                    <article>
+                      <img src="https://www.allrecipes.com/thmb/-ksD5Udvqyv_o9i7koLMU1KN718=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ALR-23298-egg-fried-rice-VAT-4x3-2closeup-ab653366830b41cc8d62627939ccc6c7.jpg" alt="Egg Fried Rice" width="300">
+                      <h3>Egg Fried Rice</h3>
+                        <p>A quick and easy breakfast with eggs, rice, and a hint of soy sauce. </p>
+                        <a href="https://www.allrecipes.com/recipe/23298/egg-fried-rice/">View Recipe</a>
+                    </article>
+                </section>
+
+                <section id="lunch">
+                  <h2>🥗 Lunch</h2>
+                    <article>
+                      <img src="https://www.allrecipes.com/thmb/4xmE8lu1TSg893xk93wk20AKJcs=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/46822-indian-chicken-curry-ii-DDMFS-4x3-39160aaa95674ee395b9d4609e3b0988.jpg" alt="Chicken Curry" width="300">
+                        <h3>Chicken Curry</h3>
+                          <p>A flavorful Burmese-style curry with tender chicken, onions, garlic, and spices.</p>
+                          <a href="https://www.allrecipes.com/recipe/46822/indian-chicken-curry-ii/">View Recipe</a>
+                    </article>
+                </section>
+
+                <section id="dinner">
+                  <h2>🍲 Dinner</h2>
+                    <article>
+                      <img src="https://www.allrecipes.com/thmb/mg9pufwyQJhXB42kSLIqNSsH2IQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/5619976-93f115e193dc443a8fab2df10baec97a.jpg" alt="Garlic Butter Shrimp with Rice" width="300">
+                      <h3>Lemon Pepper Shrimp</h3>
+                        <p>Juicy shrimp sautéed in lemon pepper, served with steamed rice.</p>
+                        <a href="https://www.allrecipes.com/recipe/267247/air-fryer-lemon-pepper-shrimp/">View Recipe</a>
+                    </article>
+                </section>
+
+                <section id="desserts">
+                  <h2>🍰 Desserts</h2>
+                    <article>
+                      <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fpublic-assets.meredithcorp.io%2F19a6af4dd6c465e1fca820b7af2c8a7e%2F170460883056720240107_001247.jpg&q=60&c=sc&poi=auto&orient=true&h=512" alt="Chocolate Lava Cake" width="300">
+                      <h3>Chocolate Lava Cake</h3>
+                        <p>Warm chocolate cake with a gooey molten center — perfect for chocolate lovers.</p>
+                        <a href="https://www.allrecipes.com/recipe/219964/chef-johns-chocolate-lava-cake/">View Recipe</a>
+                    </article>
+                </section>
+
+                <section id="snacks">
+                  <h2>🥟 Snacks</h2>
+                    <article>
+                      <img src="https://www.allrecipes.com/thmb/z0sc_N7QmxpshqUsHoi1I85aDIQ=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/266826-air-fryer-potato-wedges-DDMFS-4x3-62eba5348c6543a6ab09cbdbf65a6c71.jpg" alt="Potato Wedges" width="300">
+                      <h3>Potato Wedges</h3>
+                        <p>Seasoned, oven-baked or fried potato wedges with dipping sauce.</p>
+                        <a href="https://www.allrecipes.com/recipe/266826/air-fryer-potato-wedges/">View Recipe</a>
+                    </article>
+                </section>
+</aside>
+        </main>
+    </div>
+
+<aside>
+
+<h3>Links</h3>
+
+<ul>
+                <li><a href="https://ontheroadtomandalay.blogspot.com/">အကြိုက်ဆုံး ဘလော့များ</a></li>
+                <li><a href="https://www.allrecipes.com/">ဟင်းချက်သင်တန်းများ</a></li>
+                <li><a href="https://kyaukphrunet.blogspot.com/p/blog-page_28.html">ဟင်းချက်နည်း စာအုပ်များ</a></li>
+                <li><a href="https://www.oceansupercenter.com.mm/">အစားအသောက် စျေးဝယ်စင်တာ</a></li>
+                <li><a href="https://my.wikipedia.org/wiki/%E1%80%99%E1%80%BC%E1%80%94%E1%80%BA%E1%80%99%E1%80%AC%E1%80%B7_%E1%80%A1%E1%80%85%E1%80%AC%E1%80%B8%E1%80%A1%E1%80%85%E1%80%AC">ဒေသအစားအသောက်များ</a></li>
+            </ul>
+
+</aside>
+        </main>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Yan Bhone Aung's Kitchen</p>
+    </footer>
+
+</body>
+</html>

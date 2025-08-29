@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yan Bhone Aung's Kitchen</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        header { background-color: #88a6d2; color: white; padding: 10px 0; text-align: center; }
+        .logo { font-size: 2.5em; font-weight: bold; }
+        nav { background-color: #374e70; padding: 10px 0; text-align: center; }
+        nav a { color: white; text-decoration: none; padding: 0 15px; }
+        main { display: flex; flex-wrap: wrap; margin-top: 20px; }
+        .main-content { flex: 3; padding: 20px; background-color: white; }
+        aside { flex: 1; padding: 20px; background-color: #eee; margin-left: 20px; }
+        h1, h2, h3 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li a { text-decoration: none; color: #0066cc; }
+        footer { text-align: center; padding: 20px; background-color: #374e70; color: white; margin-top: 20px; }
+    
+        /* အရင် CSS code များရဲ့ အောက်မှာ ဒီ code တွေကို ထည့်ပါ */
+
+.card {
+    background-color: #fff;
+    border-radius: 8px; /* ဘေးထောင့်တွေကို အဝိုင်းလေးဖြစ်အောင်လုပ် */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* အရိပ်လေးထည့်သွင်း */
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* မောက်စ်တင်ရင် ရွှေ့သွားတဲ့ effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* မောက်စ်တင်ရင် အပေါ်နည်းနည်းလေးတက်သွားအောင် */
+}
+
+.card-image {
+    width: 100%;
+    height: 150px; /* ပုံရဲ့ အမြင့်ကို သတ်မှတ် */
+    object-fit: cover; /* ပုံရဲ့ အချိုးမပျက်အောင် ဖြတ်ညှပ်ကပ် */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 200;
+}
+
+aside h3 {
+    margin-top: 0;
+    color: #374e70; /* ခေါင်းစဉ် အရောင်ပြောင်း */
+    border-bottom: 2px solid #374e70;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+aside li a:hover {
+    color: #374e70; /* မောက်စ်တင်ရင် အရောင်ပြောင်း */
+    text-decoration: underline;
+}
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html">Bhone's Kitchen</a></div>
+            <h1>Welcome to My Kitchen!</h1>
+            <p>People who know me know that I love to cook. I've created this site to share some of my favorite recipes and online food resources. *Bon Appétit!*</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+            <div class="main-content">
+               <h2><b>About Me</b></h2>
+
+                <blockquote>Hello and welcome to <strong>Bhone’s Kitchen</strong>!
+                  My name is <strong>Yan Bhone Aung</strong>, and I’m someone who has always loved cooking and experimenting in the kitchen. 
+                  For me, food is more than just something to eat—it’s a way to connect with family, friends, and culture.<br><br>
+
+                  I started this website to share some of my favorite recipes, cooking tips, and food inspirations. 
+                  Whether you’re looking for traditional dishes, quick everyday meals, or something new to try, I hope you’ll find something here that inspires you to cook.<br><br>
+
+                  Cooking has been a passion of mine since I was young. I learned many recipes from my family and also enjoy adding my own twist to them. This site is my little corner of the internet where I can share those recipes with you.<br><br>
+
+                  My goal is simple: to make cooking fun, enjoyable, and accessible for everyone. I believe that great food brings people together, and I’d love for you to join me on this journey.<br><br>
+
+                  Thank you for visiting Bhone’s Kitchen—happy cooking! 🍳✨
+                </blockquote>
+            </div>
+    </div>
+<aside>
+
+<h3>Links</h3>
+
+<ul>
+                <li><a href="https://ontheroadtomandalay.blogspot.com/">အကြိုက်ဆုံး ဘလော့များ</a></li>
+                <li><a href="https://www.allrecipes.com/">ဟင်းချက်သင်တန်းများ</a></li>
+                <li><a href="https://kyaukphrunet.blogspot.com/p/blog-page_28.html">ဟင်းချက်နည်း စာအုပ်များ</a></li>
+                <li><a href="https://www.oceansupercenter.com.mm/">အစားအသောက် စျေးဝယ်စင်တာ</a></li>
+                <li><a href="https://my.wikipedia.org/wiki/%E1%80%99%E1%80%BC%E1%80%94%E1%80%BA%E1%80%99%E1%80%AC%E1%80%B7_%E1%80%A1%E1%80%85%E1%80%AC%E1%80%B8%E1%80%A1%E1%80%85%E1%80%AC">ဒေသအစားအသောက်များ</a></li>
+            </ul>
+
+</aside>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Yan Bhone Aung's Kitchen</p>
+    </footer>
+
+</body>
+</html>
